@@ -25,7 +25,7 @@ fn main() {
         .ok()
         .unwrap()
         .split_whitespace()
-        .map(|_number| _number.parse().ok().unwrap())
+        .map(|_number| _number.parse::<usize>().ok().unwrap())
         .collect();
 
     let rows: usize = numbers[0];
